@@ -164,7 +164,7 @@ respectively.
           always-float-label="[[alwaysFloatLabel]]"
           no-label-float="[[noLabelFloat]]"
           label="[[label]]">
-          <iron-icon icon="arrow-drop-down" suffix></iron-icon>
+          <iron-icon icon="[[setIcon]]" suffix></iron-icon>
         </paper-input>
       </div>
       <content id="content" select=".dropdown-content"></content>
@@ -303,6 +303,10 @@ respectively.
             type: String,
             value: 'left',
             reflectToAttribute: true
+          },
+          setIcon: {
+            type: String,
+            value: 'arrow-drop-down'
           }
         },
 
